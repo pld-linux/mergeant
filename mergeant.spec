@@ -5,7 +5,7 @@ Version:	0.52
 Release:	4
 License:	GPL
 Group:		Applications/Databases
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/0.52/%{name}-%{version}.tar.bz2
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/mergeant/0.52/%{name}-%{version}.tar.bz2
 # Source0-md5:	e9f96b824e452e9b9406b4c11f005b95
 Patch0:		%{name}-locale-names.patch
 Patch1:		%{name}-pluginsdir.patch
@@ -120,11 +120,11 @@ rm -f $RPM_BUILD_ROOT%{_bindir}/mg-test*
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /usr/bin/scrollkeeper-update
+%post	-p /usr/bin/scrollkeeper-update
 %postun	-p /usr/bin/scrollkeeper-update
 
-%post libs -p /sbin/ldconfig
-%postun libs -p /sbin/ldconfig
+%post	libs -p /sbin/ldconfig
+%postun	libs -p /sbin/ldconfig
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
