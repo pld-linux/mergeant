@@ -17,15 +17,22 @@ BuildRequires:	libgnomeprintui-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	scrollkeeper
-Requires(post,postun):	scrollkeeper
 Requires(post):	GConf2 >= 2.3.0
+Requires(post):	scrollkeeper
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Mergeant is a program which helps administer a DBMS database using the gnome-db
-framework. Basically, it memorizes all the structure of the database, and some
-queries, and does the SQL queries instead of the user (not having to type all
-over again those SQL commands, although it is still possible to do so).
+Mergeant is a program which helps administer a DBMS database using the
+gnome-db framework. Basically, it memorizes all the structure of the
+database, and some queries, and does the SQL queries instead of the
+user (not having to type all over again those SQL commands, although
+it is still possible to do so).
+
+%description -l pl
+Mergeant to program pomagaj±cy w administrowaniu baz± DBMS przy u¿yciu
+¶rodowiska gnome-db. Zapamiêtuje ca³± strukturê bazy i czê¶æ zapytañ,
+a nastêpnie wykonuje zapytania SQL zamiast u¿ytkownika (który nie musi
+wpisywaæ ci±gle tych samych poleceñ SQL - choæ jest to nadal mo¿liwe).
 
 %prep
 %setup -q
@@ -61,8 +68,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/bin/scrollkeeper-update
 %gconf_schema_install
 
-%postun
-/usr/bin/scrollkeeper-update
+%postun	-p /usr/bin/scrollkeeper-update
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
