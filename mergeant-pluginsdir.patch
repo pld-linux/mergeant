@@ -1,0 +1,22 @@
+diff -urN aa/mergeant-0.52/libmergeant/handlers/plugins/Makefile.am mergeant-0.52/libmergeant/handlers/plugins/Makefile.am
+--- aa/mergeant-0.52/libmergeant/handlers/plugins/Makefile.am	2004-07-10 15:42:54.000000000 +0200
++++ mergeant-0.52/libmergeant/handlers/plugins/Makefile.am	2004-08-28 22:26:13.138995496 +0200
+@@ -1,5 +1,5 @@
+ lib_LTLIBRARIES = libmergeant_handler_text.la libmergeant_handler_cidr.la libmergeant_handler_passmd5.la
+-libdir = $(datadir)/$(PACKAGE)/plugins
++libdir = @MERGEANT_Plugdir@
+ INCLUDES = \
+ 	-I$(top_srcdir) -I.. \
+ 	-I$(top_builddir) \
+diff -urN aa/mergeant-0.52/libmergeant/Makefile.am mergeant-0.52/libmergeant/Makefile.am
+--- aa/mergeant-0.52/libmergeant/Makefile.am	2004-07-31 21:52:07.000000000 +0200
++++ mergeant-0.52/libmergeant/Makefile.am	2004-08-28 21:52:37.128475680 +0200
+@@ -9,7 +9,7 @@
+ 	-DLIBMERGEANT_ICONSDIR=\""$(datadir)/pixmaps/libmergeant"\" \
+ 	-DLIBMERGEANT_DATADIR=\""$(datadir)/gnome-db"\" \
+ 	-DLIBMERGEANT_LOCALEDIR=\""$(datadir)/locale"\" \
+-	-DLIBMERGEANT_PLUGINSDIR=\""$(datadir)/$(PACKAGE)/plugins"\" \
++	-DLIBMERGEANT_PLUGINSDIR=\""$(libdir)/$(PACKAGE)/plugins"\" \
+ 	-DDTDINSTALLDIR=\""$(LIBMERGEANT_DTDDIR)"\" \
+ 	-DPREFIX=\""$(prefix)"\" \
+ 	-DSYSCONFDIR=\""$(sysconfdir)"\" \
