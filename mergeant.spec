@@ -9,6 +9,7 @@ Source0:	ftp://ftp.gnome-db.org/pub/gnome-db/sources/v%{version}/%{name}-%{versi
 # Source0-md5:	7b1441d52702414ed0fa5e0fd946cd6b
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gnome-common
 BuildRequires:	gtk-doc
 BuildRequires:	libglade2
 BuildRequires:	libgnomedb-devel >= 0.90.0-2
