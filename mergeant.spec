@@ -12,7 +12,7 @@ Patch1:		%{name}-pluginsdir.patch
 Buildrequires:	GConf2-devel >= 2.4.0
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	gnome-common
+BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.4.4
 BuildRequires:	gtk-doc
 BuildRequires:	intltool >= 0.11
@@ -92,7 +92,7 @@ mv po/{no,nb}.po
 rm -f missing
 glib-gettextize --copy --force
 %{__libtoolize}
-%{__aclocal} -I %{_aclocaldir}/gnome2-macros
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
