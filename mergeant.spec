@@ -1,17 +1,17 @@
 Summary:	Mergeant database admin tool
 Summary(pl):	Narzêdzie do administrowania bazami danych
 Name:		mergeant
-Version:	0.12.0
+Version:	0.12.1
 Release:	1
 License:	GPL
 Group:		Applications/Databases
-# Source0-md5:	c98825d82168fa385a5170dd33801164
 Source0:	ftp://ftp.gnome-db.org/pub/gnome-db/sources/v%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	7b1441d52702414ed0fa5e0fd946cd6b
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk-doc
 BuildRequires:	libglade2
-BuildRequires:	libgnomedb-devel
+BuildRequires:	libgnomedb-devel >= 0.12.1
 BuildRequires:	libgnomeui-devel
 BuildRequires:	libgnomeprintui-devel
 BuildRequires:	libtool
