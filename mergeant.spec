@@ -10,7 +10,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/mergeant/0.52/%{name}-%{version}
 Patch0:		%{name}-locale-names.patch
 Patch1:		%{name}-pluginsdir.patch
 Patch2:		%{name}-libgda.patch
-Buildrequires:	GConf2-devel >= 2.4.0
+BuildRequires:	GConf2-devel >= 2.4.0
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
 BuildRequires:	gnome-common >= 2.8.0
