@@ -2,7 +2,7 @@ Summary:	Mergeant database admin tool
 Summary(pl):	Narzêdzie do administrowania bazami danych
 Name:		mergeant
 Version:	0.52
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/0.52/%{name}-%{version}.tar.bz2
@@ -17,9 +17,9 @@ BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.4.4
 BuildRequires:	gtk-doc
 BuildRequires:	intltool >= 0.11
-BuildRequires:	libgda-devel >= 1.1.99
+BuildRequires:	libgda-devel >= 1.2.0
 BuildRequires:	libglade2 >= 2.0.1
-BuildRequires:	libgnomedb-devel >= 1.1.99
+BuildRequires:	libgnomedb-devel >= 1.2.0
 BuildRequires:	libgnomeui-devel >= 2.4.0
 BuildRequires:	libgnomeprintui-devel >= 2.4.0
 BuildRequires:	libtool
@@ -60,8 +60,8 @@ Summary(pl):	Pliki nag³ówkowe libmergeant
 Group:		X11/Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Requires:	gtk+2-devel >= 2:2.4.4
-Requires:	libgda-devel >= 1.1.99
-Requires:	libgnomedb-devel >= 1.1.99
+Requires:	libgda-devel >= 1.2.0
+Requires:	libgnomedb-devel >= 1.2.0
 Requires:	libxml2-devel
 
 %description devel
