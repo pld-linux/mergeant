@@ -2,13 +2,14 @@ Summary:	Mergeant database admin tool
 Summary(pl):	Narzêdzie do administrowania bazami danych
 Name:		mergeant
 Version:	0.52
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/0.52/%{name}-%{version}.tar.bz2
 # Source0-md5:	e9f96b824e452e9b9406b4c11f005b95
 Patch0:		%{name}-locale-names.patch
 Patch1:		%{name}-pluginsdir.patch
+Patch2:		%{name}-libgda.patch
 Buildrequires:	GConf2-devel >= 2.4.0
 BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
@@ -16,9 +17,9 @@ BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtk+2-devel >= 2:2.4.4
 BuildRequires:	gtk-doc
 BuildRequires:	intltool >= 0.11
-BuildRequires:	libgda-devel >= 1.1.6
+BuildRequires:	libgda-devel >= 1.1.99
 BuildRequires:	libglade2 >= 2.0.1
-BuildRequires:	libgnomedb-devel >= 1.1.6
+BuildRequires:	libgnomedb-devel >= 1.1.99
 BuildRequires:	libgnomeui-devel >= 2.4.0
 BuildRequires:	libgnomeprintui-devel >= 2.4.0
 BuildRequires:	libtool
@@ -59,8 +60,8 @@ Summary(pl):	Pliki nag³ówkowe libmergeant
 Group:		X11/Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Requires:	gtk+2-devel >= 2:2.4.4
-Requires:	libgda-devel >= 1.1.6
-Requires:	libgnomedb-devel >= 1.1.6
+Requires:	libgda-devel >= 1.1.99
+Requires:	libgnomedb-devel >= 1.1.99
 Requires:	libxml2-devel
 
 %description devel
@@ -85,6 +86,7 @@ Biblioteki statyczne Mergeanta.
 %setup -q
 %patch0 -p1
 %patch1 -p1
+%patch2 -p1
 
 mv po/{no,nb}.po
 
