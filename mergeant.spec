@@ -9,7 +9,7 @@ Source0:	ftp://ftp.gnome-db.org/pub/gnome-db/sources/v%{version}/%{name}-%{versi
 # Source0-md5:	7b1441d52702414ed0fa5e0fd946cd6b
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gnome-common
+BuildRequires:	gnome-common >= 2.8.0
 BuildRequires:	gtk-doc
 BuildRequires:	libglade2
 BuildRequires:	libgnomedb-devel >= 0.90.0-2
@@ -42,7 +42,7 @@ wpisywaæ ci±gle tych samych poleceñ SQL - choæ jest to nadal mo¿liwe).
 rm -f missing
 glib-gettextize --copy --force
 %{__libtoolize}
-%{__aclocal} -I %{_aclocaldir}/gnome2-macros
+%{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
