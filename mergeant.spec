@@ -79,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/mergeant/plugins/*.la
 %attr(755,root,root) %{_libdir}/mergeant/plugins/*.so*
 %{_datadir}/application-registry/*
-%{_datadir}/applications/*
+%{_desktopdir}/*
 %{_datadir}/mergeant
 %{_datadir}/mime-info/*
 %{_omf_dest_dir}/%{name}
