@@ -137,7 +137,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/%{name}/plugins/lib*.so*
 %{_libdir}/bonobo/servers/*.server
 %{_datadir}/application-registry/*
-%{_desktopdir}/*
+%{_desktopdir}/*.desktop
 %{_datadir}/mergeant
 %{_datadir}/mime-info/*
 %{_omf_dest_dir}/%{name}
