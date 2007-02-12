@@ -1,5 +1,5 @@
 Summary:	Mergeant database admin tool
-Summary(pl):	NarzÍdzie do administrowania bazami danych
+Summary(pl.UTF-8):   Narzƒôdzie do administrowania bazami danych
 Name:		mergeant
 Version:	0.52
 Release:	4
@@ -36,27 +36,27 @@ database, and some queries, and does the SQL queries instead of the
 user (not having to type all over again those SQL commands, although
 it is still possible to do so).
 
-%description -l pl
-Mergeant to program pomagaj±cy w administrowaniu baz± DBMS przy uøyciu
-∂rodowiska gnome-db. ZapamiÍtuje ca≥± strukturÍ bazy i czÍ∂Ê zapytaÒ,
-a nastÍpnie wykonuje zapytania SQL zamiast uøytkownika (ktÛry nie musi
-wpisywaÊ ci±gle tych samych poleceÒ SQL - choÊ jest to nadal moøliwe).
+%description -l pl.UTF-8
+Mergeant to program pomagajƒÖcy w administrowaniu bazƒÖ DBMS przy u≈ºyciu
+≈õrodowiska gnome-db. Zapamiƒôtuje ca≈ÇƒÖ strukturƒô bazy i czƒô≈õƒá zapyta≈Ñ,
+a nastƒôpnie wykonuje zapytania SQL zamiast u≈ºytkownika (kt√≥ry nie musi
+wpisywaƒá ciƒÖgle tych samych polece≈Ñ SQL - choƒá jest to nadal mo≈ºliwe).
 
 %package libs
 Summary:	Mergeant libraries
-Summary(pl):	Biblioteki Mergeanta
+Summary(pl.UTF-8):   Biblioteki Mergeanta
 Group:		X11/Libraries
 Requires:	gtk+2 >= 2:2.4.4
 
 %description libs
 Mergeant libraries.
 
-%description libs -l pl
+%description libs -l pl.UTF-8
 Biblioteki Mergeanta.
 
 %package devel
 Summary:	Libmergeant development files
-Summary(pl):	Pliki nag≥Ûwkowe libmergeant
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe libmergeant
 Group:		X11/Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Requires:	gtk+2-devel >= 2:2.4.4
@@ -67,19 +67,19 @@ Requires:	libxml2-devel
 %description devel
 Libmergeant development files.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe libmergeant.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe libmergeant.
 
 %package static
 Summary:	Static Mergeant libraries
-Summary(pl):	Biblioteki statyczne Mergeanta
+Summary(pl.UTF-8):   Biblioteki statyczne Mergeanta
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static Mergeant libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteki statyczne Mergeanta.
 
 %prep
