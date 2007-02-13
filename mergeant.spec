@@ -1,5 +1,5 @@
 Summary:	Mergeant database admin tool
-Summary(pl.UTF-8):   Narzędzie do administrowania bazami danych
+Summary(pl.UTF-8):	Narzędzie do administrowania bazami danych
 Name:		mergeant
 Version:	0.52
 Release:	4
@@ -44,7 +44,7 @@ wpisywać ciągle tych samych poleceń SQL - choć jest to nadal możliwe).
 
 %package libs
 Summary:	Mergeant libraries
-Summary(pl.UTF-8):   Biblioteki Mergeanta
+Summary(pl.UTF-8):	Biblioteki Mergeanta
 Group:		X11/Libraries
 Requires:	gtk+2 >= 2:2.4.4
 
@@ -56,7 +56,7 @@ Biblioteki Mergeanta.
 
 %package devel
 Summary:	Libmergeant development files
-Summary(pl.UTF-8):   Pliki nagłówkowe libmergeant
+Summary(pl.UTF-8):	Pliki nagłówkowe libmergeant
 Group:		X11/Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 Requires:	gtk+2-devel >= 2:2.4.4
@@ -72,7 +72,7 @@ Pliki nagłówkowe libmergeant.
 
 %package static
 Summary:	Static Mergeant libraries
-Summary(pl.UTF-8):   Biblioteki statyczne Mergeanta
+Summary(pl.UTF-8):	Biblioteki statyczne Mergeanta
 Group:		X11/Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
