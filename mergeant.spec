@@ -2,7 +2,7 @@ Summary:	Mergeant database admin tool
 Summary(pl.UTF-8):	Narzędzie do administrowania bazami danych
 Name:		mergeant
 Version:	0.67
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/mergeant/0.67/%{name}-%{version}.tar.bz2
@@ -17,13 +17,14 @@ BuildRequires:	intltool >= 0.11
 BuildRequires:	libgda3-devel >= 1.2.1
 BuildRequires:	libglade2 >= 2.0.1
 BuildRequires:	libgnomedb3-devel >= 1.2.1
-BuildRequires:	libgnomeui-devel >= 2.4.0
 BuildRequires:	libgnomeprintui-devel >= 2.4.0
+BuildRequires:	libgnomeui-devel >= 2.4.0
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel
 BuildRequires:	pkgconfig
 BuildRequires:	scrollkeeper
 Requires(post,postun):	desktop-file-utils
+Requires(post,postun):	gtk-update-icon-cache
 Requires(post,postun):	hicolor-icon-theme
 Obsoletes:	mergeant-devel
 Obsoletes:	mergeant-libs
@@ -48,7 +49,7 @@ wpisywać ciągle tych samych poleceń SQL - choć jest to nadal możliwe).
 
 %build
 rm -f missing
-glib-gettextize --copy --force
+%{__glib_gettextize}
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
